@@ -20,3 +20,16 @@ This project is a basic HTTP server built using Node.js. The server listens on p
    ```bash
    git clone <repository-url>
    cd <repository-directory>
+
+## Images
+   - /home 
+   ![Screenshot of /home](images/Screenshot%20(939).png);
+
+    -/about
+   ![Screenshot of /about](images/Screenshot%20(940).png);
+   
+   -/contacts
+   ![Screenshot of /contacts](images/Screenshot%20(941).png);
+
+
+
