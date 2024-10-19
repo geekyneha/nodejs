@@ -1,12 +1,12 @@
 const http = require('http'); // Imports the built-in 'http' module for creating an HTTP server.
 const fs = require('fs'); // Imports the built-in 'fs' module for file system operations (like reading files).
 const path = require('path'); // Imports the built-in 'path' module to work with file paths.
-const PORT = 5000; // Defines the server port number (5000).
+const PORT = 3000; // Defines the server port number (3000).
 
 // Creates the HTTP server.
 const server = http.createServer((req, res) => {
     // Handles requests for the '/home' URL.
-    if (req.url === '/home') {
+    if (req.url === '/home' || req.url === '/') {
         const serverFile = path.join(__dirname, 'index.html'); // Sets the path for 'index.html'.
         
         fs.readFile(serverFile, (err, data) => { // Reads the 'index.html' file.
@@ -67,5 +67,5 @@ const server = http.createServer((req, res) => {
 
 // Starts the server and listens on port 5000.
 server.listen(PORT, () => {
-    console.log("server is running ...."); // Logs a message when the server is running.
+    console.log("server is running ...."+PORT); // Logs a message when the server is running.
 });
